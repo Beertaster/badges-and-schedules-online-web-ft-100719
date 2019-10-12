@@ -10,10 +10,8 @@ end
 
 def assign_rooms(attendees)
   arr = []
-  room = 1
-  while room < array.length
+  
     array.collect{|name| arr << "Hello, #{name} You'll be assigned to room #{room}!"
-    room += 1 
-  end
+  
   arr
 end
