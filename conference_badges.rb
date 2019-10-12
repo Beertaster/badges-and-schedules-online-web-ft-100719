@@ -8,10 +8,12 @@ def batch_badge_creator(array)
   arr
 end
 
-def assign_rooms(attendees)
+def assign_rooms(array)
   arr = []
-  
-    array.collect{|name| arr << "Hello, #{name} You'll be assigned to room #{room}!"
-  
+  room = 1
+  while room < array.length
+    array.each{|name| arr << "Hello, #{name} You'll be assigned to room #{room}!"
+    room += 1 
+  end
   arr
 end
